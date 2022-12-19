@@ -1,4 +1,5 @@
 import "./Data.css"
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Data = (props) =>{
     
@@ -11,7 +12,7 @@ const Data = (props) =>{
            <h1>List of Employees</h1>   
            {
             props.data.map(info => {
-                return <p key={info.id}  
+                return <p className="mt-5" key={info.id}  
                     onClick={() => {updateInfo(info.id) }} role="button" style={{cursor:"pointer"}}>
                     ID: {info.id} -- {info.name} in {info.department}   
                     </p>;

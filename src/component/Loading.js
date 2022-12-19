@@ -1,8 +1,9 @@
 import "./Loading.css"
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Loading = () =>{
     return (
-        <div className="mt-5">
+        <div className="vh-100 bg-danger">
             <h1>Loading</h1><div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
         </div>
     );
